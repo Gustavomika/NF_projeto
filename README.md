@@ -1,10 +1,10 @@
 # NF_projeto
 
-a Nextflow workflow that merges replicates from FASTQ files.
+This Nextflow workflow that merges replicates from FASTQ files named following this pattern: "PatientX_repX_R1.fastq.gz".
 
 Here's an explanation of how this workflow works:
 
-  The main script (main.nf) sets up the input (default = ./data) and output (default = ./merged_fastq) directories as parameters.
+  The main script (main.nf) sets up the input, a path to a folder with fastq files (default = ./data), and output, a folder with the merged fastq files (default = ./merged_fastq).
   It creates a channel from the input directory, grouping files by patient and separating R1 and R2 reads.
   The MERGE_REPLICATES process is called with the grouped files.
   In the MERGE_REPLICATES process:
