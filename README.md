@@ -17,3 +17,4 @@ To run this workflow, you would use:
 nextflow run main.nf --input_dir path/to/your/input_dir --output_dir path/to/your/output
 
 A test data is present in the data folder, with 12 files from three patients. 
+In the "merge_replicates.nf" file inside the modules folder, its possible to change the input_dir and output_dir parameters.
